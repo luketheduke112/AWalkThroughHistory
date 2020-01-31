@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Montserrat Light";
+    src: url(fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url(fonts/Oswald-Bold.otf);
+}
+
+@font-face {
+    font-family: "Montserrat Italics";
+    src: url(fonts/Montserrat-LightItalic.otf);
+}
+
+body {
+    color:rgb(255, 255, 255);
+    background:rgb(22, 22, 22);
+}
+
+#main-container {
+    font-family:'Times New Roman', Times, serif;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    letter-spacing: 15px;
+    font-family:"Oswald Bold";
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: 100;
+    font-size:5vw;
+    text-shadow: 6px 6px rgb(68, 68, 68);
+}
+
+#options-headline {
+    font-size:2vw;
+}
+
+
+#main-container p {
+    text-indent: each-line;
+    font-family: 'Montserrat Light';
+    font-size:15px;
+}
+
+#main-container ul {
+    margin-top:50px;
+    width:600px;
+    margin-left:5vw;
+}
+
+#main-container li {
+    font-family: "Montserrat Italics";
+    margin-top:10px;
+    font-size:15px;
+    list-style-type: decimal;
+}
+
+#user-choice {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:80px;
+    font-size:50px;
+    color:rgb(103, 255, 65);
+    width:40vw;
+    height:70px;
+    background:rgba(42, 42, 42, 0);
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+#command-input {
+    margin-left: auto;
+    margin-right:auto;
+    width:calc(40vw + 55px);
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    margin-right:20px;
+    font-size:50px;
+}
+
+#user-choice:focus {
+    outline: none;
+}
