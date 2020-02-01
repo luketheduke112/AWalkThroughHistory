@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Doctor Glitch";
+    src: url(fonts/Doctor-Glitch.otf);
+}
+
+@font-face {
     font-family: "Oswald Bold";
     src: url(fonts/Oswald-Bold.otf);
 }
@@ -14,8 +19,16 @@
 }
 
 body {
+    overflow-x: hidden;
+    padding:0px;
+    margin:0px;
     color:rgb(255, 255, 255);
-    background:rgb(22, 22, 22);
+    background:rgb(15, 15, 15);
+}
+
+html {
+    padding:0px;
+    margin:0px;
 }
 
 #main-container {
@@ -26,25 +39,44 @@ body {
 }
 
 h3 {
-    letter-spacing: 15px;
-    font-family:"Oswald Bold";
+    padding:30px;
+    color:white;
+    letter-spacing: 25px;
+    font-family:"Doctor Glitch";
     text-align: center;
     margin-left:auto;
+    width:100%;
     margin-right:auto;
+    margin-bottom:20px;
     font-weight: 100;
-    font-size:5vw;
-    text-shadow: 6px 6px rgb(68, 68, 68);
+    font-size:4vw;
+}
+
+#sub-title {
+    padding:0px 10px;
+    letter-spacing: 10px;
+    margin-bottom:100px;
+    font-size:1.4vw;
+}
+
+#top-title {
+    
+    text-shadow: 6px 6px rgb(199, 55, 55), 8px 8px rgb(42, 224, 72), 10px 10px rgb(50, 129, 255);
 }
 
 #options-headline {
-    font-size:2vw;
+    margin-top:120px;
+    text-shadow: 3px 3px rgb(78, 78, 78);
+    width:100%;
+    font-size:1.5vw;
+    background:transparent;
 }
 
 
 #main-container p {
     text-indent: each-line;
     font-family: 'Montserrat Light';
-    font-size:15px;
+    font-size:22px;
 }
 
 #main-container ul {
@@ -56,32 +88,35 @@ h3 {
 #main-container li {
     font-family: "Montserrat Italics";
     margin-top:10px;
-    font-size:15px;
+    font-size:18px;
     list-style-type: decimal;
 }
 
 #user-choice {
+    border:1px solid white;
     font-family: 'Courier New', Courier, monospace;
     margin-top:80px;
-    font-size:50px;
+    font-size:20px;
     color:rgb(103, 255, 65);
-    width:40vw;
-    height:70px;
-    background:rgba(42, 42, 42, 0);
-    border:none;
+    width:80%;
+    height:30px;
+    background:rgb(15, 15, 15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.65);
 }
 
 #command-input {
+    position:fixed;
+    left:calc(50% - 40%);
+    top:calc(100vh - 120px);
     margin-left: auto;
     margin-right:auto;
-    width:calc(40vw + 55px);
+    width:100%;
 }
 
 label {
     font-family: 'Courier New', Courier, monospace;
     margin-right:20px;
-    font-size:50px;
+    font-size:20px;
 }
 
 #user-choice:focus {
